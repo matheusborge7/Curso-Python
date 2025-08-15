@@ -141,7 +141,6 @@ while i < len(meses):
 print(meses.index('Junho', 6))
 
 # OBS: Caso o elemento não exista, será gerado ValueError:
-"""
 
 # Dicas na utilização de tuplas
 
@@ -153,4 +152,30 @@ meses = ('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Junho', 'A
 
 # Slicing
 
-# tupla()
+# tupla[inicio:fim:passo]
+
+print(meses[0:])
+
+# Por quê utilizar tupla?
+
+# - Tuplassão mais rapidas do que listas.
+# - Tuplas deixam seu códifo mais seguro*.
+
+# * Isso porque trabalhar com elementos imutáveis traz segurança para o código.
+"""
+
+# Copiando uma tupla para a outra
+
+tupla = (1, 2, 3)
+print(tupla)
+
+nova = tupla # Na tupla não temos o problema de Shallow Copy
+print(nova)
+print(tupla)
+
+outra = (4, 5, 6)
+
+nova = nova + outra
+
+print(nova)
+print(tupla)
