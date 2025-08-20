@@ -21,7 +21,6 @@ Os conjuntos (sets) são referenciados em Python com chaves {}
 Diferença entre Conjuntos (Set) e Mapas (Dicionários) em Python:
      - Um dicinário tem chave/valor;
      - Um conjunto tem apenas valor;
-"""
 
 # Definindo um conjunto:
 
@@ -40,3 +39,27 @@ print(type(s))
 s = {1, 2, 3, 4, 5, 5}
 print(s)
 print(type(s))
+
+#Podemos verificar se determinado elemento está contido no conjunto
+if 13 in s:
+    print('Tem o 3')
+else:
+    print('Não tem o 3')
+"""
+
+# Importante lembrar que, além de não termos valores duplicados não, temos ordem
+ 
+ # Lista aceitam valores duplicados entao temos 10 elementos
+lista = [99, 2, 34, 23, 2, 12, 1, 44, 5, 34]
+print(f'Lista: {lista} com {len(lista)} elementos')
+
+ # Tuplas aceitam valores duplicados entao temos 10 elementos
+tupla = (99, 2, 34, 23, 2, 12, 1, 44, 5, 34)
+print(f'Tupla: {tupla} com {len(tupla)} elementos')
+
+dicionario = {}.fromkeys(lista, 'dict')
+print(f'Dicionario: {dicionario} com {len(dicionario)} elementos')
+
+conjunto = {99, 2, 34, 23, 2, 12, 1, 44, 5, 34}
+print(f'Conjunto: {conjunto} com {len(conjunto)} elementos')
+
